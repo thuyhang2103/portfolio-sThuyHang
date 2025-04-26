@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+*{scroll-behavior: smooth}
+#hero{
+	width: 100%; height: 100%; background-image: url( "../Images/bg.jpg"); background-repeat: no-repeat; background-size: no cover
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/*#testimonial
+{
+	width: 100%;	
+	background-image:url("../images/the-luxe.jpg");
+	background-repeat: no-repeat; background-size: cover
+}*/
+
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f1f;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #02457a;
+  -webkit-box-shadow: 5px 5px 10px #001b48, -5px -5px 10px #02457a;
+          box-shadow: 5px 5px 10px #001b48, -5px -5px 10px #02457a;
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #3a7ebd, #1f4a8e, #dee8f2) ;
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #3a7ebd, #1f4a8e, #dee8f2);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
